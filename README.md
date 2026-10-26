@@ -9,7 +9,6 @@ saved, faceted figure of hotel prices against distance in three cities.
 | Path | What it is |
 |---|---|
 | `R/first_visualization.R` | The script from class, tidied after the session |
-| `R/data.R` | The data preparation on its own, as we first wrote it |
 | `data/hotels-europe.csv` | The hotels-europe data (Békés & Kézdi 2021) |
 | `output/` | Where the script saves the chart (`three_cities.pdf`) |
 
@@ -21,38 +20,7 @@ after cloning the repo (as empty directories are not included).
 
 ## How to run it
 
-### Clone the repository (preferred)
-
-Cloning gives you a local copy that is linked to this repository. Pick one of
-the following ways.
-
-**In RStudio:** *File → New Project → Version Control → Git*, paste
-
-```
-https://github.com/graebnerc/AdvData26-Session5.git
-```
-
-as the repository URL, choose where to save it and click *Create Project*.
-RStudio opens the project straight away.
-
-**From R**, with `usethis` (as in session 4):
-
-```r
-usethis::create_from_github("graebnerc/AdvData26-Session5", fork = FALSE)
-```
-
-**In the terminal:**
-
-```bash
-git clone https://github.com/graebnerc/AdvData26-Session5.git
-```
-
-Then open `AdvData26-Session5.Rproj` and continue with step 3 above.
-
-### Download the code
-
-1. Download the repository (green **Code** button → **Download ZIP**) and unzip
-   it, or clone it (see [Clone the repo](#clone-the-repo) below).
+1. Get a copy of the repository — clone it (preferred) or download it, see below.
 2. Open `AdvData26-Session5.Rproj` in RStudio.
 3. Make sure the packages are installed:
    `install.packages(c("tidyverse", "scales", "here"))`
@@ -61,6 +29,36 @@ Then open `AdvData26-Session5.Rproj` and continue with step 3 above.
 The script uses `here()`, so it finds `data/` regardless of your working
 directory — as long as you opened the project.
 
+### Clone the repository (preferred)
+
+Cloning gives you a local copy that is linked to this repository. Pick one of
+the following ways.
+
+**In RStudio:** *File → New Project → Version Control → Git*, paste
+
+```
+https://github.com/applied-data-science-euf/AdvData26-Session5.git
+```
+
+as the repository URL, choose where to save it and click *Create Project*.
+RStudio opens the project straight away, so you can skip step 2.
+
+**From R**, with `usethis` (as in session 4):
+
+```r
+usethis::create_from_github("applied-data-science-euf/AdvData26-Session5", fork = FALSE)
+```
+
+**In the terminal:**
+
+```bash
+git clone https://github.com/applied-data-science-euf/AdvData26-Session5.git
+```
+
+### Download the code
+
+If you do not want to use Git: green **Code** button → **Download ZIP**, then
+unzip it. You get the same files, but no link to this repository.
 
 ## Licence
 
